@@ -1,3 +1,4 @@
+import 'package:covid_app/Pages/addpage.dart';
 import 'package:flutter/material.dart';
 
 class MenuPage extends StatefulWidget {
@@ -24,18 +25,22 @@ class _MenuPageState extends State<MenuPage> {
           children: [
             SizedBox(
                 width: 200,
-                height: 40,
+                height: 60,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(backgroundColor: Colors.purpleAccent,foregroundColor: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius:BorderRadius.zero
                     )
                     ),
-                    onPressed: (){}, child: Text("Add"))),
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder:
+                      (context)=>AddPage()
+                      ));
+                    }, child: Text("Add"))),
             SizedBox(height: 20,),
             SizedBox(
                 width: 200,
-                height: 40,
+                height: 60,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(backgroundColor: Colors.purpleAccent,foregroundColor: Colors.black,
                         shape: RoundedRectangleBorder(
@@ -46,7 +51,7 @@ class _MenuPageState extends State<MenuPage> {
             SizedBox(height: 20,),
             SizedBox(
                 width: 200,
-                height: 40,
+                height: 60,
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(backgroundColor: Colors.purpleAccent,foregroundColor: Colors.black,
                         shape: RoundedRectangleBorder(
