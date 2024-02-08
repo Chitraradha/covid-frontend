@@ -1,4 +1,5 @@
 import 'package:covid_app/Pages/addpage.dart';
+import 'package:covid_app/Pages/viewpage.dart';
 import 'package:flutter/material.dart';
 
 class MenuPage extends StatefulWidget {
@@ -47,7 +48,11 @@ class _MenuPageState extends State<MenuPage> {
                             borderRadius:BorderRadius.zero
                         )
                     ),
-                    onPressed: (){}, child: Text("View"))),
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder:
+                      (context)=>ViewPage()
+                      ));
+                    }, child: Text("View"))),
             SizedBox(height: 20,),
             SizedBox(
                 width: 200,
