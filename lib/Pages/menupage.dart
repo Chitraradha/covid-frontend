@@ -1,4 +1,5 @@
 import 'package:covid_app/Pages/addpage.dart';
+import 'package:covid_app/Pages/searchpage.dart';
 import 'package:covid_app/Pages/viewpage.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +64,11 @@ class _MenuPageState extends State<MenuPage> {
                             borderRadius:BorderRadius.zero
                         )
                     ),
-                    onPressed: (){}, child: Text("Search"))),
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder:
+                      (context)=>SearchPage()
+                      ));
+                    }, child: Text("Search"))),
             SizedBox(height: 20,)
           ],
         ),
